@@ -1,0 +1,36 @@
+.sidenav
+  height: 100%
+  width: 0
+  position: fixed
+  z-index: 1
+  top: 0
+  left: 0
+  background-colorL #111
+  overflow-x: hidden
+  transition: 0.5s
+  padding-top: 60px
+  background: #000
+
+  a 
+    padding: 8px 8px 8px 32px
+    font-size: 25px
+    color: #fff
+    display: block
+    background: cadetblue
+    +border-box($border)
+    +transition-a(.5s)
+  
+
+    &:hover
+      color: #f1f1f1
+      background: red
+    &:last-child
+      background: none  
+      +border-box(0)
+  .closebtn
+    position: absolute
+    top: 0
+    right: 25px
+    font-size: 36px
+    margin-left: 50px
+
